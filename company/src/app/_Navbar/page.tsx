@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import React, { useState } from "react";
 
 const Navbar = () => {
@@ -15,9 +15,9 @@ const Navbar = () => {
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="flex items-center justify-between">
             <a href="#">
-              <Image
-                className="w-auto h-6 sm:h-7"
-                src="https://merakiui.com/images/full-logo.svg"
+              <img
+                className="w-auto h-11 sm:h-"
+                src=""
                 alt="Logo"
               />
             </a>

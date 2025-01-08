@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Hero() {
   return (
     <div className='bg-white w-full h-[961px]'>
@@ -44,22 +42,22 @@ export default function Hero() {
 
         <div className="flex justify-between mt-4 z-50">
           <div className="w-[384px] h-[484px]">
-            <Image
-              src="https://a.storyblok.com/f/172398/784x784/e4f11b8fb1/Image_left2x.png/m/filters:format(webp):quality(70)"
+            <img
+              src="https://a.storyblok.com/f/172398/784x784/e4f11b8fb1/img_left2x.png/m/filters:format(webp):quality(70)"
               alt=""
               className="w-full object-fit"
             />
           </div>
           <div className="w-[384px] h-[484px]">
-            <Image
-              src="https://a.storyblok.com/f/172398/784x784/e4f11b8fb1/Image_left2x.png/m/filters:format(webp):quality(70)"
+            <img
+              src="https://a.storyblok.com/f/172398/784x784/e4f11b8fb1/img_left2x.png/m/filters:format(webp):quality(70)"
               alt=""
               className="w-full object-fit"
             />
           </div>
           <div className="w-[384px] h-[484px]">
-            <Image
-              src="https://a.storyblok.com/f/172398/784x784/e4f11b8fb1/Image_left2x.png/m/filters:format(webp):quality(70)"
+            <img
+              src="https://a.storyblok.com/f/172398/784x784/e4f11b8fb1/img_left2x.png/m/filters:format(webp):quality(70)"
               alt=""
               className="w-full object-fit"
             />
