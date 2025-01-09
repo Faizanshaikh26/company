@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* :root {
   --background: #ffffff;
@@ -17,7 +18,7 @@
 body {
   /* color: var(--foreground);
   background: var(--background); */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: poppins, Helvetica, sans-serif , ;
 }
 
 @layer base {
@@ -95,35 +96,20 @@ body {
   gap: 12px;
 }
 
-.marquee-row {
-  display: flex;
-  gap: 40px;
+
+.marquee-content {
+  
+  animation: scrolling 15s linear infinite;
 }
 
-.marquee-row img {
-  height: 38px; 
-  opacity: 0.8;
-}
 
-.left-to-right {
-  animation: scrolling-left-to-right 15s linear infinite;
-}
 
-.right-to-left {
-  animation: scrolling-right-to-left 15s linear infinite;
-}
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translatex(-144vw); }
+} 
 
-@keyframes scrolling-left-to-right {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
 
-@keyframes scrolling-right-to-left {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
-}
 
-.marquee-row:hover {
-  animation-play-state: paused; 
-}
+
 

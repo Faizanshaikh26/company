@@ -33,54 +33,45 @@ const StatsSection = () => {
           </div>
         </div>
 
-      {/* Logos Section */}
-<div className="mt-16 max-w-7xl mx-auto flex flex-wrap justify-center gap-12 marquee">
-  <div className="marquee-row left-to-right mb-8">
-    <img
-      src="https://a.storyblok.com/f/172398/79x20/8f0a8d27e9/ahrefs-logo-dark.svg"
-      alt="ahrefs logo"
-      className="h-10 opacity-80 mr-9"
-    />
-    <img
-      src="https://a.storyblok.com/f/172398/128x20/9b196bb512/instacart-logo-dark.svg"
-      alt="Instacart logo"
-      className="h-10 opacity-80 mr-9"
-    />
-    <img
-      src="https://a.storyblok.com/f/172398/99x16/6f80521995/groupon-logo-dark.svg"
-      alt="Groupon logo"
-      className="h-10 opacity-80 mr-9"
-    />
-    <img
-      src="https://a.storyblok.com/f/172398/143x16/f7dcf7c08f/century21-logo-dark.svg"
-      alt="Century 21 logo"
-      className="h-10 opacity-80 "
-    />
-  </div>
-  <div className="marquee-row right-to-left">
-    <img
-      src="https://a.storyblok.com/f/172398/167x20/8eb02bfdca/cleardesk-logo-dark.svg"
-      alt="ClearDesk logo"
-      className="h-10 opacity-80 mr-9"
-    />
-    <img
-      src="https://a.storyblok.com/f/172398/108x20/487786ba7c/oneims-logo-dark.svg"
-      alt="OneIMS logo"
-      className="h-10 opacity-80 mr-9"
-    />
-    <img
-      src="https://a.storyblok.com/f/172398/32x20/4997d0de6a/ring-logo-dark.svg"
-      alt="Ring logo"
-      className="h-10 opacity-80 mr-9"
-    />
-      <img
-      src="https://a.storyblok.com/f/172398/79x20/8f0a8d27e9/ahrefs-logo-dark.svg"
-      alt="ahrefs logo"
-      className="h-10 opacity-80 mr-9"
-    />
-  </div>
-</div>
 
+{/* moving image */}
+        <div className="mt-16 flex flex-wrap justify-center gap-12 marquee-content">
+          <img
+            src="https://a.storyblok.com/f/172398/79x20/8f0a8d27e9/ahrefs-logo-dark.svg"
+            alt="ahrefs logo"
+            className="h-7 opacity-80"
+          />
+          <img
+            src="https://a.storyblok.com/f/172398/128x20/9b196bb512/instacart-logo-dark.svg"
+            alt="Instacart logo"
+            className="h-7  opacity-80"
+          />
+          <img
+            src="https://a.storyblok.com/f/172398/99x16/6f80521995/groupon-logo-dark.svg"
+            alt="Groupon logo"
+            className="h-7 opacity-80"
+          />
+          <img
+            src="https://a.storyblok.com/f/172398/143x16/f7dcf7c08f/century21-logo-dark.svg"
+            alt="Century 21 logo"
+            className="h-7 opacity-80"
+          />
+          <img
+            src="https://a.storyblok.com/f/172398/167x20/8eb02bfdca/cleardesk-logo-dark.svg"
+            alt="ClearDesk logo"
+            className="h-7 opacity-80"
+          />
+          <img
+            src="https://a.storyblok.com/f/172398/108x20/487786ba7c/oneims-logo-dark.svg"
+            alt="OneIMS logo"
+            className="h-7 opacity-80"
+          />
+          <img
+            src="https://a.storyblok.com/f/172398/32x20/4997d0de6a/ring-logo-dark.svg"
+            alt="Ring logo"
+            className="h-7 opacity-80"
+          />
+        </div> 
       </div>
     </section>
   );
