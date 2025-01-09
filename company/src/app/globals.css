@@ -87,8 +87,6 @@ body {
 }
 
 
-
-
 .marquee {
   overflow: hidden;
   display: flex;
@@ -102,12 +100,64 @@ body {
   animation: scrolling 15s linear infinite;
 }
 
-
-
 @keyframes scrolling {
   0% { transform: translateX(0); }
   100% { transform: translatex(-144vw); }
 } 
+
+
+
+.card {
+  width: 331px ;
+  height: 475px;
+ background-color: #253053;
+  transition: all 0.4s;
+  border-radius: 10px;
+color: white;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.card:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.1);
+  background:#3a4878
+}
+
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+
+  opacity: 1;
+  border-radius: 15px;
+}
+
+.card:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+ background-color: #ffff;
+ color: black;
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+}
+
+.card:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 12px;
+  transform: rotate(0deg);
+}
+
 
 
 
