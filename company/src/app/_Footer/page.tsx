@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div>
       
-      <footer className="bg-white dark:bg-gray-900">
+      <footer className="bg-white dark:bg-gray-900 border-t">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="lg:flex lg:items-start lg:gap-8">
             <div className="text-teal-600 dark:text-teal-300">

@@ -1,5 +1,6 @@
 
 import Hero from "./Hero/page";
+import StatsSection from "./State/page";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
   
 <Hero/>
 
+<StatsSection/>
 
 
 
