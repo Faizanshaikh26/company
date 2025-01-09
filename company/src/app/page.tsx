@@ -4,7 +4,7 @@ import StatsSection from "./State/page";
 
 export default function Home() {
   return (
-    <div className=" mt-[90px] ">
+    <div className=" mt-[77px] ">
     
     
     

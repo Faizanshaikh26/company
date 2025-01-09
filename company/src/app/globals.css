@@ -84,3 +84,46 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+
+
+.marquee {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.marquee-row {
+  display: flex;
+  gap: 40px;
+}
+
+.marquee-row img {
+  height: 38px; 
+  opacity: 0.8;
+}
+
+.left-to-right {
+  animation: scrolling-left-to-right 15s linear infinite;
+}
+
+.right-to-left {
+  animation: scrolling-right-to-left 15s linear infinite;
+}
+
+@keyframes scrolling-left-to-right {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes scrolling-right-to-left {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.marquee-row:hover {
+  animation-play-state: paused; 
+}
+

@@ -4,7 +4,7 @@ export default function Hero() {
       <div
         className="bg-[#253053] px-32 mx-auto pt-32 "
         style={{
-          // clipPath: "polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%)",
+          clipPath: "polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%)",
         }}
       >
         <h1
