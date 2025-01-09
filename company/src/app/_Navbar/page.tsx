@@ -226,7 +226,7 @@ const Navbar = () => {
             </svg>
           </span>
           <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-200"></span>
-          <span className="relative text-base font-semibold">Hover Me!</span>
+          <span className="relative text-base font-semibold">Free 14 Day trial!</span>
         </button>
 
         <button className="flex items-center px-4 py-2 text-blue-500 border border-blue-500 rounded-md hover:bg-blue-50">
