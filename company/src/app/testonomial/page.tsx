@@ -1,6 +1,40 @@
 import React from 'react';
+import {
+  ChevronRight,
+  PlaneIcon,
+  Globe2,
+  Star,
+  StarHalf,
+} from "lucide-react";
+
 
 export default function Testimonial() {
+
+
+  const data=[
+    {
+      id:1,
+      img:"https://hubstaff.com/images/logos/getapp-dark.svg",
+      content:"4.6 out of 5 stars from 1500 reviews",
+      rating:4.6
+
+    },
+    {
+      id:2,
+      img:"https://hubstaff.com/images/logos/capterra-dark.svg",
+      content:"4.6 out of 5 stars from 1500 reviews",
+      rating:4.6
+
+    },
+    {
+      id:3,
+      img:"https://hubstaff.com/images/logos/g2-dark.svg",
+      content:"4.5 out of 5 stars from 1500 reviews",
+      rating:4.5
+
+    },
+  ]
+
 
   
 
@@ -114,7 +148,29 @@ export default function Testimonial() {
       </div>
       </div>
 
+    <div className='max-w-4xl mx-auto py-20 flex gap-10'>
+
+      {
+        data.map((itrm)=>{
+          return (<>
+             <div key={itrm.id} >
+      <img src={itrm.img} />
+      <p>{itrm.content}</p>
+      <Star/>
+    </div>
+          </>)
+        })
+      }
+ 
+    </div>
       
     </div>
   );
 }
+
+
+
+
+
+
+
