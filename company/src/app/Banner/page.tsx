@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white h-[300px] rounded-lg max-w-6xl mx-auto my-10 flex items-center">
+    <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white h-[300px] rounded-lg max-w-6xl mx-auto my-10 mb-40 flex items-center">
       {/* Text Section */}
       <div className="max-w-[50%] p-10">
         <h1 className="text-4xl font-bold mb-4">See Hubstaff in action</h1>

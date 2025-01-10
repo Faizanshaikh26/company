@@ -1,7 +1,10 @@
 
 import Banner from "./Banner/page";
 import Hero from "./Hero/page";
+import MoneyLeaksSection from "./MoneyLeaksSection/page";
+import PrivacyPrinciples from "./PrivacyPrinciples/page";
 import StatsSection from "./State/page";
+import TeamManagementBanner from "./TeamManagementBanner/page";
 import Testonomial from "./testonomial/page";
 
 export default function Home() {
@@ -20,6 +23,11 @@ export default function Home() {
 
 <Banner/>
 
+<TeamManagementBanner/>
+
+<MoneyLeaksSection/>
+
+<PrivacyPrinciples/>
     </div>
   );
 }
