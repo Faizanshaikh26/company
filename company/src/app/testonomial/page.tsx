@@ -1,10 +1,8 @@
 import React from 'react';
 import {
-  ChevronRight,
-  PlaneIcon,
-  Globe2,
+ 
   Star,
-  StarHalf,
+  
 } from "lucide-react";
 
 
