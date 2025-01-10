@@ -2,32 +2,7 @@ import React from 'react';
 
 export default function Testimonial() {
 
-  const testimonials = [
-    {
-      id: 1,
-      companyName: 'OneIMS',
-      mainHeading: '25% cost savings by eliminating wasted tasks',
-      projectSavings: '10% - 25% Project savings',
-      costReduction: '25% Cost reduction from bad hires',
-      feedback: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse adipisci, excepturi laborum porro delectus officiis illo nesciunt natus sequi quaerat?',
-    },
-    {
-      id: 2,
-      companyName: 'TechSpark',
-      mainHeading: '30% efficiency boost in project workflows',
-      projectSavings: '15% Project cost savings',
-      costReduction: '20% Cost reduction from inefficiencies',
-      feedback: 'Amazing tool that transformed our project management workflow! Highly recommended.',
-    },
-    {
-      id: 3,
-      companyName: 'InnovateX',
-      mainHeading: '40% faster project completion time',
-      projectSavings: '20% Project cost reduction',
-      costReduction: '35% Cost saved from enhanced team collaboration',
-      feedback: 'This tool helped us achieve milestones we thought were impossible. Excellent support team too!',
-    },
-  ];
+  
 
   return (
     <div className='bg-[#f2f8ff] my-4 '>
@@ -40,41 +15,106 @@ export default function Testimonial() {
         </h3>
       </div>
 
-      <div className='px-24 py-10 flex justify-between'>
-        {testimonials.map((testimonial) => (
-          <div key={testimonial.id} className='card'>
-            <div className='first-content'>
-              <div className='text-white p-6'>
-                {/* Logo Section */}
-                <div className='mb-4'>
-                  <h1 className='text-xl font-semibold'>{testimonial.companyName}</h1>
-                </div>
-
-                {/* Main Heading */}
-                <div className='mb-6'>
-                  <h2 className='text-2xl font-bold leading-snug'>
-                    {testimonial.mainHeading}
-                  </h2>
-                </div>
-
-                {/* Savings Section */}
-                <div className='space-y-4'>
-                  <p className='text-lg'>
-                    <span className='font-bold text-green-400'>{testimonial.projectSavings}</span>
-                  </p>
-                  <hr className='border-gray-500' />
-                  <p className='text-lg'>
-                    <span className='font-bold text-green-400'>{testimonial.costReduction}</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='second-content'>
-              <p>{testimonial.feedback}</p>
-            </div>
-          </div>
-        ))}
+      <div className='flex justify-between '> 
+      <div className='px-24 py-10 flex justify-between '>
+      <div className="bg-[#1E293B] text-white w-[331px] h-[475px] py-6 px-8 rounded-lg shadow-lg">
+      <div className="flex items-center space-x-3 mb-4">
+        <div className="bg-[#61DAFB] p-2 rounded-full">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 text-white"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path d="M10 3a7 7 0 107 7h-4a3 3 0 11-3-3V3z" />
+            <path d="M7 7a3 3 0 11-3-3v4a7 7 0 003 3z" />
+          </svg>
+        </div>
+        <h2 className="text-xl font-bold">OneIMS</h2>
       </div>
+      <p className="text-3xl font-bold text-[#38BDF8] mb-4">
+        25% cost savings by eliminating wasted tasks
+      </p>
+      <div className="text-lg space-y-6">
+        <div className='mt-10'>
+          <span className="text-[#38BDF8] font-bold text-[30px] ">10% - 25%</span>
+          <span className="ml-1 font-bold block ]">Project savings</span>
+        </div>
+        <hr className="border-[#94A3B8] my-2" />
+        <div>
+          <span className="text-[#38BDF8] font-bold text-[30px]">25%</span>
+          <span className="font-bold block">Cost reduction from bad hires</span>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div className='px-24 py-10 flex justify-between'>
+      <div className="bg-[#1E293B] text-white w-[331px] h-[475px] py-6 px-8 rounded-lg shadow-lg">
+      <div className="flex items-center space-x-3 mb-4">
+        <div className="bg-[#61DAFB] p-2 rounded-full">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 text-white"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path d="M10 3a7 7 0 107 7h-4a3 3 0 11-3-3V3z" />
+            <path d="M7 7a3 3 0 11-3-3v4a7 7 0 003 3z" />
+          </svg>
+        </div>
+        <h2 className="text-xl font-bold">OneIMS</h2>
+      </div>
+      <p className="text-3xl font-bold text-[#38BDF8] mb-4">
+        25% cost savings by eliminating wasted tasks
+      </p>
+      <div className="text-lg space-y-6">
+        <div className='mt-10'>
+          <span className="text-[#38BDF8] font-bold text-[30px] ">10% - 25%</span>
+          <span className="ml-1 font-bold block ]">Project savings</span>
+        </div>
+        <hr className="border-[#94A3B8] my-2" />
+        <div>
+          <span className="text-[#38BDF8] font-bold text-[30px]">25%</span>
+          <span className="font-bold block">Cost reduction from bad hires</span>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div className='px-24 py-10 flex justify-between'>
+      <div className="bg-[#1E293B] text-white w-[331px] h-[475px] py-6 px-8 rounded-lg shadow-lg">
+      <div className="flex items-center space-x-3 mb-4">
+        <div className="bg-[#61DAFB] p-2 rounded-full">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 text-white"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path d="M10 3a7 7 0 107 7h-4a3 3 0 11-3-3V3z" />
+            <path d="M7 7a3 3 0 11-3-3v4a7 7 0 003 3z" />
+          </svg>
+        </div>
+        <h2 className="text-xl font-bold">OneIMS</h2>
+      </div>
+      <p className="text-3xl font-bold text-[#38BDF8] mb-4">
+        25% cost savings by eliminating wasted tasks
+      </p>
+      <div className="text-lg space-y-6">
+        <div className='mt-10'>
+          <span className="text-[#38BDF8] font-bold text-[30px] ">10% - 25%</span>
+          <span className="ml-1 font-bold block ]">Project savings</span>
+        </div>
+        <hr className="border-[#94A3B8] my-2" />
+        <div>
+          <span className="text-[#38BDF8] font-bold text-[30px]">25%</span>
+          <span className="font-bold block">Cost reduction from bad hires</span>
+        </div>
+      </div>
+    </div>
+      </div>
+      </div>
+
+      
     </div>
   );
 }
