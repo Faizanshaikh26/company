@@ -2,7 +2,7 @@ import React from "react";
 
 const MoneyLeaksSection = () => {
   return (
-    <section className="max-w-6xl mx-auto  flex items-center gap-10 mb-40 ">
+    <section className="max-w-6xl mx-auto flex items-center gap-10 mb-40">
       <div className="flex flex-col lg:flex-row items-center gap-12">
         {/* Text Section */}
         <div className="max-w-lg">
@@ -16,11 +16,11 @@ const MoneyLeaksSection = () => {
           </h2>
           <p className="text-gray-600 mb-6">
             Is a project or client hurting your profit margins? Hubstaff will
-            let you know. You'll have access to{" "}
+            let you know. You&#39;ll have access to
             <a href="#" className="text-blue-500 underline">
               detailed time reports
             </a>{" "}
-            and dashboards that provide insights into where your company's
+            and dashboards that provide insights into where your company&#39;s
             billable hours are going and how that impacts revenue.
           </p>
           <h3 className="text-xl font-semibold text-gray-800 mb-2">
@@ -28,7 +28,7 @@ const MoneyLeaksSection = () => {
           </h3>
           <p className="text-gray-600 mb-6">
             Reports show you which projects are most profitable and which ones
-            drain your team’s time.
+            drain your team&#39;s time.
           </p>
           <h3 className="text-xl font-semibold text-gray-800 mb-2">
             Control expenses
@@ -53,7 +53,7 @@ const MoneyLeaksSection = () => {
           <img
             src="https://a.storyblok.com/f/172398/1214x1405/70ee0b00a0/find-and-fix-money-leaks-2x.png/m/filters:format(webp):quality(70)"
             alt="Find and fix money leaks"
-            className="rounded-lg "
+            className="rounded-lg"
           />
         </div>
       </div>

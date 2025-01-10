@@ -7,7 +7,7 @@ import {
   Globe,
   Users,
 } from "lucide-react";
-import React, { useState } from "react";
+import  { useState } from "react";
 
 const PrivacyPrinciples: React.FC = () => {
   const [open, setOpen] = useState<number | null>(1);
