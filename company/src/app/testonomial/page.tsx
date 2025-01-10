@@ -1,8 +1,15 @@
 import React from "react";
 import { Star, StarHalf } from "lucide-react";
 
+type TestimonialData = {
+  id: number;
+  img: string;
+  content: string;
+  rating: number;
+};
+
 export default function Testimonial() {
-  const data = [
+  const data: TestimonialData[] = [
     {
       id: 1,
       img: "https://hubstaff.com/images/logos/getapp-dark.svg",
@@ -23,7 +30,7 @@ export default function Testimonial() {
     },
   ];
 
-  const renderStars = (rating:any) => {
+  const renderStars = (rating: number) => {
     const fullStars = Math.floor(rating);
     const halfStar = rating % 1 >= 0.5;
     const emptyStars = 5 - Math.ceil(rating);
@@ -31,18 +38,18 @@ export default function Testimonial() {
     return (
       <div className="flex">
         {[...Array(fullStars)].map((_, index) => (
-          <Star key={`full-${index}`} className="text-yellow-400 w-4 " />
+          <Star key={`full-${index}`} className="text-yellow-400 w-4" />
         ))}
         {halfStar && <StarHalf className="text-yellow-400 w-4" />}
         {[...Array(emptyStars)].map((_, index) => (
-          <Star key={`empty-${index}`} className="text-gray-300 " />
+          <Star key={`empty-${index}`} className="text-gray-300 w-4" />
         ))}
       </div>
     );
   };
 
   return (
-    <div className="bg-[#f2f8ff] my-4 ">
+    <div className="bg-[#f2f8ff] my-4">
       <div className="text-center py-10">
         <p className="font-medium text-lg text-[#294dff]">
           Time tracking tools to maximize your team’s productivity
@@ -53,20 +60,24 @@ export default function Testimonial() {
       </div>
 
       <div className="flex justify-between px-28">
-        <div className=" py-10  ">
+        <div className="py-10">
           <div className="bg-[#253053] text-white w-[391px] h-[475px] py-6 px-10 rounded-lg shadow-lg">
             <div className="flex items-center space-x-3 mb-4">
-             <img src="https://a.storyblok.com/f/293525/116x40/68c8932d45/oneims_logo.svg" alt="" />
+              <img
+                src="https://a.storyblok.com/f/293525/116x40/68c8932d45/oneims_logo.svg"
+                alt="OneIMS Logo"
+              />
             </div>
             <p className="text-4xl font-bold text-white mb-4">
-              <span className="text-[#08ba98]">25%</span> cost savings by eliminating wasted tasks
+              <span className="text-[#08ba98]">25%</span> cost savings by
+              eliminating wasted tasks
             </p>
             <div className="text-lg space-y-6">
               <div className="mt-10">
-                <span className="text-[#08ba98] font-bold text-[28px] ">
+                <span className="text-[#08ba98] font-bold text-[28px]">
                   10% - 25%
                 </span>
-                <span className="ml-1 font-bold block ]">Project savings</span>
+                <span className="ml-1 font-bold block">Project savings</span>
               </div>
               <hr className="border-[#94A3B8] my-2" />
               <div>
@@ -80,57 +91,68 @@ export default function Testimonial() {
             </div>
           </div>
         </div>
-        
-        <div className=" py-10 ">
+
+        <div className="py-10">
           <div className="bg-white w-[391px] h-[475px] py-6 px-8 rounded-lg shadow-lg">
-          <div className="flex items-center space-x-3 mb-4">
-             <img src="https://a.storyblok.com/f/293525/168x114/54f107a54f/bachv4tmzickvpdgj90c-1.png/m/filters:format(webp):quality(70)" alt="" className="w-16" />
+            <div className="flex items-center space-x-3 mb-4">
+              <img
+                src="https://a.storyblok.com/f/293525/168x114/54f107a54f/bachv4tmzickvpdgj90c-1.png/m/filters:format(webp):quality(70)"
+                alt="Bach Logo"
+                className="w-16"
+              />
             </div>
             <p className="text-4xl font-bold text-[#253053] mb-4">
-             <span className="text-[#294dff]"> 30% </span> faster project complition
+              <span className="text-[#294dff]">30%</span> faster project
+              completion
             </p>
             <div className="text-lg space-y-6">
               <div className="mt-10">
-                <span className="  text-[18px] ">
-                  Book keeping reduced
+                <span className="text-[18px]">Bookkeeping reduced</span>
+                <span className="text-[#294dff] font-bold text-[25px] block">
+                  1 week to 1-2 days
                 </span>
-                <span className=" text-[#294dff] font-bold text-[25px] block ]">1 week to 1-2 days</span>
               </div>
               <hr className="border-[#94A3B8] my-2" />
               <div>
-                <span className="text-[#294dff] font-bold text-[28px] mt-4 ">
+                <span className="text-[#294dff] font-bold text-[28px]">
                   Over 100% ROI
                 </span>
-                <span className="font-bold block text-base mt-4">
-                 By Improving produnctivty and visiblity
+                <span className="font-bold block text-base">
+                  By improving productivity and visibility
                 </span>
               </div>
             </div>
           </div>
         </div>
-        <div className=" py-10 ">
+
+        <div className="py-10">
           <div className="bg-[#ffe7aa] text-white w-[391px] h-[475px] py-6 px-8 rounded-lg shadow-lg">
             <div className="flex items-center space-x-3 mb-4">
-              
-              <img src="https://a.storyblok.com/f/293525/115x31/0d1406e2bb/group-323.svg" alt="" />
+              <img
+                src="https://a.storyblok.com/f/293525/115x31/0d1406e2bb/group-323.svg"
+                alt="Group Logo"
+              />
             </div>
             <p className="text-4xl font-bold text-[#253053] mb-4">
-              <span className="text-[#1f95ff]">10%</span> cost savings by eliminating wasted tasks
+              <span className="text-[#1f95ff]">10%</span> cost savings by
+              eliminating wasted tasks
             </p>
             <div className="text-lg space-y-6">
               <div className="mt-10">
-                <span className="text-[#1f95ff] font-bold text-[30px]  ">
+                <span className="text-[#1f95ff] font-bold text-[30px]">
                   10% - 25%
                 </span>
-                <span className="ml-1  mt-2 font-semibold block  text-[#253053]">Project savings</span>
+                <span className="ml-1 mt-2 font-semibold block text-[#253053]">
+                  Project savings
+                </span>
               </div>
               <hr className="border-[#94A3B8] my-2" />
               <div>
                 <span className="text-[#1f95ff] font-bold text-[25px]">
-                  100% confidenece
+                  100% confidence
                 </span>
                 <span className="font-bold block text-[#253053]">
-                  In running a remote opertains
+                  In running remote operations
                 </span>
               </div>
             </div>
@@ -139,17 +161,13 @@ export default function Testimonial() {
       </div>
 
       <div className="max-w-4xl mx-auto py-20 flex gap-14">
-        {data.map((itrm) => {
-          return (
-            <>
-              <div key={itrm.id}>
-                <img src={itrm.img} className="mb-3" />
-                <p className="text-base mb-3">{itrm.content}</p>
-                <p className="ml-10">{renderStars(itrm.rating)}</p>
-              </div>
-            </>
-          );
-        })}
+        {data.map((item) => (
+          <div key={item.id}>
+            <img src={item.img} className="mb-3" alt="Testimonial Logo" />
+            <p className="text-base mb-3">{item.content}</p>
+            <div className="ml-10">{renderStars(item.rating)}</div>
+          </div>
+        ))}
       </div>
     </div>
   );
