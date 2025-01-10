@@ -23,7 +23,7 @@ export default function Testimonial() {
     },
   ];
 
-  const renderStars = (rating) => {
+  const renderStars = (rating:any) => {
     const fullStars = Math.floor(rating);
     const halfStar = rating % 1 >= 0.5;
     const emptyStars = 5 - Math.ceil(rating);
