@@ -97,6 +97,26 @@ export default function Hero() {
         <div className=" max-w-5xl mx-auto " > 
           <Carousel />
         </div>
+
+        <div className=" max-w-4xl mx-auto pb-8 text-center">
+      <h2 className="text-white text-2xl font-bold">
+        Multi-device time tracking
+      </h2>
+      <p className="mt-4 text-white text-base">
+        Save hours each week with our easy-to-use{' '}
+        <a href="#" className="text-blue-300 underline hover:text-blue-400">
+          time tracking
+        </a>
+        . Then, convert desktop, web, mobile, or{' '}
+        <a href="#" className="text-blue-300 underline hover:text-blue-400">
+          GPS time tracking
+        </a>{' '}
+        data to automated timesheets.
+      </p>
+    </div>
+
+
+       
       </div>
     </div>
   );

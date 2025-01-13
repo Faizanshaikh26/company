@@ -49,7 +49,7 @@ export default function Testimonial() {
   };
 
   return (
-    <div className="bg-[#f2f8ff] my-4">
+    <div className="bg-[#f2f8ff] py-12 ">
       <div className="text-center py-10">
         <p className="font-medium text-lg text-[#294dff]">
           Time tracking tools to maximize your team’s productivity

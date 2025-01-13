@@ -2,11 +2,11 @@ import React from "react";
 
 const StatsSection = () => {
   return (
-    <section className=" pb-10">
+    <section className=" p-16 bg-[#2b2553]">
       <div className="container mx-auto px-8 text-center">
         <div className="flex items-center justify-center gap-4">
           <span className="flex-grow h-px bg-gray-400"></span>
-          <h2 className="text-xl font-semibold text-gray-700">
+          <h2 className="text-xl font-semibold text-white">
             Time tracking & productivity metrics trusted by{" "}
             <span className="text-blue-500 font-bold">112,000+</span> businesses
           </h2>
@@ -16,20 +16,20 @@ const StatsSection = () => {
         {/* Stats Section */}
         <div className="mt-12 flex flex-wrap justify-center gap-16">
           <div className="text-center">
-            <h3 className="text-4xl font-extrabold text-gray-900">500k+</h3>
-            <p className="mt-2 text-base text-gray-600">Active users</p>
+            <h3 className="text-4xl font-extrabold text-white">500k+</h3>
+            <p className="mt-2 text-base text-white">Active users</p>
           </div>
           <div className="text-center">
-            <h3 className="text-4xl font-extrabold text-gray-900">21M+</h3>
-            <p className="mt-2 text-base text-gray-600">Total hours tracked</p>
+            <h3 className="text-4xl font-extrabold text-white">21M+</h3>
+            <p className="mt-2 text-base text-white">Total hours tracked</p>
           </div>
           <div className="text-center">
-            <h3 className="text-4xl font-extrabold text-gray-900">4M+</h3>
-            <p className="mt-2 text-base text-gray-600">Tasks completed</p>
+            <h3 className="text-4xl font-extrabold text-white">4M+</h3>
+            <p className="mt-2 text-base text-white">Tasks completed</p>
           </div>
           <div className="text-center">
-            <h3 className="text-4xl font-extrabold text-gray-900">300k+</h3>
-            <p className="mt-2 text-base text-gray-600">Payments</p>
+            <h3 className="text-4xl font-extrabold text-white">300k+</h3>
+            <p className="mt-2 text-base text-white">Payments</p>
           </div>
         </div>
 
@@ -37,39 +37,39 @@ const StatsSection = () => {
 {/* moving image */}
         <div className="mt-16 flex flex-wrap justify-center gap-12 marquee-content">
           <img
-            src="https://a.storyblok.com/f/172398/79x20/8f0a8d27e9/ahrefs-logo-dark.svg"
+            src="https://a.storyblok.com/f/298810/79x20/4f5ce2a824/ahrefs-logo.svg"
             alt="ahrefs logo"
-            className="h-7 opacity-80"
+            className="h-6 opacity-80"
           />
           <img
-            src="https://a.storyblok.com/f/172398/128x20/9b196bb512/instacart-logo-dark.svg"
+            src="https://a.storyblok.com/f/298810/128x20/9e2e70ccb8/instacart-logo.svg"
             alt="Instacart logo"
-            className="h-7  opacity-80"
+            className="h-6  opacity-80"
           />
           <img
-            src="https://a.storyblok.com/f/172398/99x16/6f80521995/groupon-logo-dark.svg"
+            src="https://a.storyblok.com/f/298810/99x16/364e2223b5/groupon-logo.svg"
             alt="Groupon logo"
-            className="h-7 opacity-80"
+            className="h-6 opacity-80"
           />
           <img
-            src="https://a.storyblok.com/f/172398/143x16/f7dcf7c08f/century21-logo-dark.svg"
+            src="https://a.storyblok.com/f/298810/143x16/1474e3dbaa/century21-logo.svg"
             alt="Century 21 logo"
-            className="h-7 opacity-80"
+            className="h-6 opacity-80"
           />
           <img
-            src="https://a.storyblok.com/f/172398/167x20/8eb02bfdca/cleardesk-logo-dark.svg"
+            src="https://a.storyblok.com/f/298810/166x20/495b032848/cleardesk-logo.svg"
             alt="ClearDesk logo"
-            className="h-7 opacity-80"
+            className="h-6 opacity-80"
           />
           <img
-            src="https://a.storyblok.com/f/172398/108x20/487786ba7c/oneims-logo-dark.svg"
+            src="https://a.storyblok.com/f/298810/107x20/9859e82bee/oneims-logo.svg"
             alt="OneIMS logo"
-            className="h-7 opacity-80"
+            className="h-6 opacity-80"
           />
           <img
-            src="https://a.storyblok.com/f/172398/32x20/4997d0de6a/ring-logo-dark.svg"
+            src="https://a.storyblok.com/f/298810/33x20/742b4a9222/ring-logo.svg"
             alt="Ring logo"
-            className="h-7 opacity-80"
+            className="h-6 opacity-80"
           />
         </div> 
       </div>

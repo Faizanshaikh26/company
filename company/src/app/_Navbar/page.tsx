@@ -1,26 +1,34 @@
+"use client"
 
-
-
-
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Change state if user scrolls more than 50px
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="fixed top-0 left-0 z-50 flex items-center justify-between w-full px-8 py-4 bg-white border-b border-gray-200 shadow-sm  h-[100px]">
+    <nav
+      className={`fixed top-0 left-0 z-50 flex items-center justify-between w-full px-8 py-4 h-[100px] transition-all duration-300 ${
+        isScrolled ? "bg-white text-gray-800 shadow-md" : "bg-transparent text-white hover:bg-white hover:text-gray-800"
+      }`}
+    >
       {/* Logo Section */}
-      <div className="flex items-center space-x-2 ">
-        <img
-          src="https://seekvectorlogo.com/wp-content/uploads/2019/01/hubstaff-vector-logo-small.png"
-          alt="Hubstaff Logo"
-        className="w-24"
-        />
-      
+      <div className="flex items-center space-x-2">
+      <h1 className="font-bold text-xl ml-20">Hubstaff </h1>
       </div>
 
       {/* Links Section */}
       <div className="flex items-center space-x-8">
         <div className="relative group">
-          <button className="flex items-center text-gray-800 hover:text-blue-500">
+          <button className="flex items-center hover:text-blue-500">
             Product
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +47,7 @@ const Navbar = () => {
           </button>
         </div>
         <div className="relative group">
-          <button className="flex items-center text-gray-800 hover:text-blue-500">
+          <button className="flex items-center hover:text-blue-500">
             Solutions
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +66,7 @@ const Navbar = () => {
           </button>
         </div>
         <div className="relative group">
-          <button className="flex items-center text-gray-800 hover:text-blue-500">
+          <button className="flex items-center hover:text-blue-500">
             Resources
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -76,10 +84,10 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <a href="#" className="text-gray-800 hover:text-blue-500">
+        <a href="#" className="hover:text-blue-500">
           Pricing
         </a>
-        <a href="#" className="text-gray-800 hover:text-blue-500">
+        <a href="#" className="hover:text-blue-500">
           Demo
         </a>
       </div>
@@ -102,25 +110,11 @@ const Navbar = () => {
               ></path>
             </svg>
           </span>
-          <span className="absolute top-0 right-0 w-12 h-full -mr-3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="object-cover w-full h-full"
-              viewBox="0 0 487 487"
-            >
-              <path
-                fillOpacity=".1"
-                fillRule="nonzero"
-                fill="#FFF"
-                d="M487 486.7c-66.1-3.6-132.3-7.3-186.3-37s-95.9-85.3-126.2-137.2c-30.4-51.8-49.3-99.9-76.5-151.4C70.9 109.6 35.6 54.8.3 0H487v486.7z"
-              ></path>
-            </svg>
-          </span>
           <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-200"></span>
           <span className="relative text-base font-semibold">Free 14 Day trial!</span>
         </button>
 
-        <button className="flex items-center px-4 py-2 text-blue-500 border border-blue-500 rounded-md hover:bg-blue-50">
+        <button className="flex items-center px-4 py-2 border rounded-md hover:bg-blue-50">
           <span className="mr-2">Sign in</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
