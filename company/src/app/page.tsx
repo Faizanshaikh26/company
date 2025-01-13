@@ -1,11 +1,7 @@
 
-import Banner from "./Banner/page";
+
 import Hero from "./Hero/page";
-import MoneyLeaksSection from "./MoneyLeaksSection/page";
-import PrivacyPrinciples from "./PrivacyPrinciples/page";
-import StatsSection from "./State/page";
-import TeamManagementBanner from "./TeamManagementBanner/page";
-import Testonomial from "./testonomial/page";
+
 
 export default function Home() {
   return (
@@ -16,7 +12,7 @@ export default function Home() {
   
 <Hero/>
 
-<StatsSection/>
+{/* <StatsSection/>
 
 
 <Testonomial/>
@@ -27,7 +23,7 @@ export default function Home() {
 
 <MoneyLeaksSection/>
 
-<PrivacyPrinciples/>
+<PrivacyPrinciples/> */}
     </div>
   );
 }
