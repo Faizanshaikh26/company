@@ -9,6 +9,7 @@ import Project from "./Project/page";
 import StatsSection from "./State/page";
 import TeamManagementBanner from "./TeamManagementBanner/page";
 import Testimonial from "./testonomial/page";
+import Tracking from "./Tracking/page";
 
 export default function Home() {
   return (
@@ -30,6 +31,8 @@ export default function Home() {
       <PrivacyPrinciples />
 
 <Project/>
+
+<Tracking/>
       <Footer/>
     </div>
   );
