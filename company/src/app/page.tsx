@@ -1,6 +1,7 @@
 import Footer from "./_Footer/page";
 import Navbar from "./_Navbar/page";
 import Banner from "./Banner/page";
+import FAQ from "./FAQ/page";
 import Hero from "./Hero/page";
 import MoneyLeaksSection from "./MoneyLeaksSection/page";
 import Payroll from "./Payroll/page";
@@ -35,7 +36,9 @@ export default function Home() {
 
 <Tracking/>
 
-<Payroll/>
+
+<Payroll />
+<FAQ/>
       <Footer/>
     </div>
   );
