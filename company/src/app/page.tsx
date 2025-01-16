@@ -3,6 +3,7 @@ import Navbar from "./_Navbar/page";
 import Banner from "./Banner/page";
 import Hero from "./Hero/page";
 import MoneyLeaksSection from "./MoneyLeaksSection/page";
+import Payroll from "./Payroll/page";
 import PrivacyPrinciples from "./PrivacyPrinciples/page";
 import Project from "./Project/page";
 
@@ -33,6 +34,8 @@ export default function Home() {
 <Project/>
 
 <Tracking/>
+
+<Payroll/>
       <Footer/>
     </div>
   );

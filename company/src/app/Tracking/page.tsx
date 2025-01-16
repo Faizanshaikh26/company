@@ -8,7 +8,7 @@ export default function Tracking() {
 
   return (
     <>
-      <div className="text-[#253053]">
+      <div className="text-[#253053] py-12">
         {/* Header Section */}
         <div className="text-center py-8">
           <h1 className="text-4xl font-semibold mb-4">
