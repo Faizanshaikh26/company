@@ -5,6 +5,7 @@ import FAQ from "./FAQ/page";
 import Hero from "./Hero/page";
 import MoneyLeaksSection from "./MoneyLeaksSection/page";
 import Payroll from "./Payroll/page";
+import PricingTable from "./Pricing/page";
 import PrivacyPrinciples from "./PrivacyPrinciples/page";
 import Project from "./Project/page";
 
@@ -39,6 +40,8 @@ export default function Home() {
 
 <Payroll />
 <FAQ/>
+
+<PricingTable/>
       <Footer/>
     </div>
   );
