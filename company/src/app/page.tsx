@@ -1,6 +1,7 @@
 import Footer from "./_Footer/page";
 import Navbar from "./_Navbar/page";
 import Banner from "./Banner/page";
+import ContactUs from "./Contact/page";
 import FAQ from "./FAQ/page";
 import Hero from "./Hero/page";
 import MoneyLeaksSection from "./MoneyLeaksSection/page";
@@ -35,6 +36,8 @@ export default function Home() {
 
 <Project/>
 
+
+
 <Tracking/>
 
 
@@ -42,6 +45,8 @@ export default function Home() {
 <FAQ/>
 
 <PricingTable/>
+
+<ContactUs/>
       <Footer/>
     </div>
   );
